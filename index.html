@@ -5,7 +5,8 @@
 	</head>
 
 	<body>
-		<input id="inputText">Enter some text : </input>
+		<label for="inputText">Enter some text :</label>
+		<input id="inputText">
 
 		<script>
 			// Get a reference to the input element
@@ -17,7 +18,7 @@
 			}
 
 			// Add a click event listener to the button
-			button.addEventListener("click",outputAlert)
+			inputText.addEventListener("click",outputAlert)
 		</script>
 	</body>
 </html>
