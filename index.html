@@ -7,18 +7,21 @@
 	<body>
 		<label for="inputText">Enter some text :</label>
 		<input id="inputText">
+		<button type="button" id="submitText">Submit</button>
 
 		<script>
 			// Get a reference to the input element
-			var inputText = document.getElementById("inputText");
+			var text = document.getElementById("inputText");
+			// Get a reference to the button element
+			var submitText = document.getElementById("submitText");
 
 			// Function to output alert
 			function outputAlert() {
-				alert(inputText);
+				alert(text);
 			}
 
 			// Add a click event listener to the button
-			inputText.addEventListener("click",outputAlert)
+			submitText.addEventListener("click",outputAlert)
 		</script>
 	</body>
 </html>
