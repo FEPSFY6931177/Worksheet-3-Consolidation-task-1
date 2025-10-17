@@ -5,13 +5,13 @@
 	</head>
 
 	<body>
-		<label for="inputText">Enter some text :</label>
+		<label for="inputText">Enter some text:</label>
 		<input id="inputText">
 		<button type="button" id="submitText">Submit</button>
 
 		<script>
 			// Get a reference to the input element
-			var text = document.getElementById("inputText");
+			var text = document.getElementById("inputText").value;
 			// Get a reference to the button element
 			var submitText = document.getElementById("submitText");
 
@@ -21,7 +21,7 @@
 			}
 
 			// Add a click event listener to the button
-			submitText.addEventListener("click",outputAlert())
+			submitText.addEventListener("click" , outputAlert);
 		</script>
 	</body>
 </html>
