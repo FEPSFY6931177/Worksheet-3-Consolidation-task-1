@@ -5,11 +5,14 @@
 	</head>
 
 	<body>
+		<!-- SOL: <input type="text" id="textInput" placeholder="Enter text"> -->
 		<label for="inputText">Enter some text:</label>
 		<input id="inputText">
+		
 		<button type="button" id="submitText">Submit</button> <!-- Need to specify type="button" or else button will automatically submit form data -->
 
 		<script>
+			// SOL: can just use 1 comment lol: // Get references to the input element and button 
 			// Get a reference to the input element
 			var text = document.getElementById("inputText").value;
 			// Get a reference to the button element
